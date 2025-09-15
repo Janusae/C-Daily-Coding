@@ -1,4 +1,5 @@
 ﻿using Reverse_String.Day4;
+using Reverse_String.Day5;
 
 namespace Program
 {
@@ -6,7 +7,6 @@ namespace Program
     {
         public static void Main()
         {
-            Console.WriteLine(RemoveDuplicates.Remove("Hello"));
         }
     }
 }
