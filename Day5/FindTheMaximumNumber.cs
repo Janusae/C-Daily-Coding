@@ -5,7 +5,7 @@
         public static int Find(List<int> numbers)
         {
             if(numbers.Count == 0)
-                throw new ArgumentException("Input list cannot be empty");
+                throw new ArgumentException("Input list cannot be empty!");
 
             int max = numbers[0];
             for(int i = 1; i<numbers.Count; i++)
