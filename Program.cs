@@ -2,6 +2,7 @@
 using Reverse_String.Day5;
 using Reverse_String.Day6;
 using Reverse_String.Day7;
+using Reverse_String.Day8;
 using static System.Net.Mime.MediaTypeNames;
 
 namespace Program
@@ -10,7 +11,8 @@ namespace Program
     {
         public static void Main()
         {
-            Console.WriteLine(FindFirstRepeatedNumber.Find(new int[]{1, 2, 3, 4, 2, 5}));
+            Console.WriteLine(FindHowManyWordWeHave.Find(null)); // 4
+
         }
     }
 }
