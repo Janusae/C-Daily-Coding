@@ -3,6 +3,7 @@ using Reverse_String.Day5;
 using Reverse_String.Day6;
 using Reverse_String.Day7;
 using Reverse_String.Day8;
+using Reverse_String.Day9;
 using static System.Net.Mime.MediaTypeNames;
 
 namespace Program
@@ -11,7 +12,7 @@ namespace Program
     {
         public static void Main()
         {
-            Console.WriteLine(FindHowManyWordWeHave.Find(null)); // 4
+            Console.WriteLine(FindLongestConsecutiveSequence.LongestConsecutive(new int[] { 1, 9, 3, 10, 4, 20, 2 })); 
 
         }
     }
