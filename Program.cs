@@ -1,4 +1,5 @@
-﻿using Reverse_String.Day4;
+﻿using Reverse_String.Day10;
+using Reverse_String.Day4;
 using Reverse_String.Day5;
 using Reverse_String.Day6;
 using Reverse_String.Day7;
@@ -12,7 +13,7 @@ namespace Program
     {
         public static void Main()
         {
-            Console.WriteLine(FindLongestConsecutiveSequence.LongestConsecutive(new int[] { 1, 9, 3, 10, 4, 20, 2 })); 
+            Console.WriteLine(FindSecondBiggestNumber.Find(new int[]{ 10, 10, 5 } )); 
 
         }
     }
