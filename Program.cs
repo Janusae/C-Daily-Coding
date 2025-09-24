@@ -13,7 +13,7 @@ namespace Program
     {
         public static void Main()
         {
-            Console.WriteLine(FindSecondBiggestNumber.Find(new int[]{ 10, 10, 5 } )); 
+            Console.WriteLine(FindSecondBiggestNumber.Find(new int[] { 2, 2, 2 })); 
 
         }
     }
