@@ -1,4 +1,5 @@
 ﻿using Reverse_String.Day10;
+using Reverse_String.Day11;
 using Reverse_String.Day4;
 using Reverse_String.Day5;
 using Reverse_String.Day6;
@@ -13,7 +14,7 @@ namespace Program
     {
         public static void Main()
         {
-            Console.WriteLine(FindSecondBiggestNumber.Find(new int[] { 2, 2, 2 })); 
+            Console.WriteLine(FindFirstCharThatNotRepeated.Find("Swiss")); 
 
         }
     }
