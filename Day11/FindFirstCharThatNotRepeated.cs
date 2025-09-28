@@ -16,7 +16,7 @@ namespace Reverse_String.Day11
             if (letters.Length < 1)
                 throw new Exception("Input can not be empty!");
 
-            char result = 'a';
+            char? result = null;
             for (int i = 0; i < letters.Length; i++)
             {
                 var cout = 0;
@@ -27,12 +27,13 @@ namespace Reverse_String.Day11
                         cout++;
                     }
                 }
-                if (cout == letters.Length - 1)
+                if (cout == 1)
                 {
+                    result = letters[i];
                     break;
                 }
             }
-            return result == 'a' ? null : result;
+            return result == null ? null : result;
         }
 
     // Version 1.0
