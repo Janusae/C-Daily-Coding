@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Reverse_String.Day11
 {
+    // Version 1.1
     public class FindFirstCharThatNotRepeated
     {
         public static char? Find(string letters)
@@ -15,31 +16,58 @@ namespace Reverse_String.Day11
             if (letters.Length < 1)
                 throw new Exception("Input can not be empty!");
 
-            Dictionary<char , int> dict = new Dictionary<char, int>();
-            var lowerText = letters.ToLower();
-            for (int i = 0; i < lowerText.Length; i++)
+            char result = 'a';
+            for (int i = 0; i < letters.Length; i++)
             {
-                var count = 0;
-                for (int j = 0; j < lowerText.Length; j++)
+                var cout = 0;
+                for (int j = 0; j < letters.Length; j++)
                 {
-                    if (lowerText[i] == lowerText[j]) count++;
+                    if (char.ToLower(letters[i]) == char.ToLower(letters[j]))
+                    {
+                        cout++;
+                    }
                 }
-                if (!dict.ContainsKey((char)lowerText[i]))
+                if (cout == letters.Length - 1)
                 {
-                    dict.Add(lowerText[i], count);
+                    break;
                 }
             }
-            int min = dict.GetValueOrDefault(lowerText[0]);
-            char? letter = null;
-            foreach(var iteme in dict)
-            {
-                if (iteme.Value < min)
-                {
-                    min = iteme.Value;
-                    letter = iteme.Key;
-                }
-            }
-            return letter ?? null;
+            return result == 'a' ? null : result;
         }
-    }
+
+    // Version 1.0
+    //public static char? Find(string letters)
+    //{
+    //    if (letters == null)
+    //        throw new ArgumentNullException(nameof(letters));
+    //    if (letters.Length < 1)
+    //        throw new Exception("Input can not be empty!");
+
+    //    Dictionary<char , int> dict = new Dictionary<char, int>();
+    //    var lowerText = letters.ToLower();
+    //    for (int i = 0; i < lowerText.Length; i++)
+    //    {
+    //        var count = 0;
+    //        for (int j = 0; j < lowerText.Length; j++)
+    //        {
+    //            if (lowerText[i] == lowerText[j]) count++;
+    //        }
+    //        if (!dict.ContainsKey((char)lowerText[i]))
+    //        {
+    //            dict.Add(lowerText[i], count);
+    //        }
+    //    }
+    //    int min = dict.GetValueOrDefault(lowerText[0]);
+    //    char? letter = null;
+    //    foreach(var iteme in dict)
+    //    {
+    //        if (iteme.Value < min)
+    //        {
+    //            min = iteme.Value;
+    //            letter = iteme.Key;
+    //        }
+    //    }
+    //    return letter ?? null;
+    //}/*
+}
 }
