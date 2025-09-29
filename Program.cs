@@ -14,7 +14,7 @@ namespace Program
     {
         public static void Main()
         {
-            Console.WriteLine(FindFirstCharThatNotRepeated.Find("Mohammad")); 
+            Console.WriteLine(FindSecondBiggestNumber.Find(new int[] { 1,2,3,4 })); 
 
         }
     }
