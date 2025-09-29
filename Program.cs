@@ -14,7 +14,7 @@ namespace Program
     {
         public static void Main()
         {
-            Console.WriteLine(FindFirstCharThatNotRepeated.Find("Swiss")); 
+            Console.WriteLine(FindFirstCharThatNotRepeated.Find("Mohammad")); 
 
         }
     }

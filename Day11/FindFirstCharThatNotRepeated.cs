@@ -11,29 +11,31 @@ namespace Reverse_String.Day11
     {
         public static char? Find(string letters)
         {
-            if (letters == null)
-                throw new ArgumentNullException(nameof(letters));
-            if (letters.Length < 1)
-                throw new Exception("Input can not be empty!");
+            if (letters == null) throw new ArgumentNullException(nameof(letters));
+            if (letters.Length < 1) throw new Exception(" can not be empty!");
 
             char? result = null;
             for (int i = 0; i < letters.Length; i++)
             {
-                var cout = 0;
+                var count = 0;
                 for (int j = 0; j < letters.Length; j++)
                 {
                     if (char.ToLower(letters[i]) == char.ToLower(letters[j]))
                     {
-                        cout++;
+                        count++;
+                        if(count > 1)
+                        {
+                            break;
+                        }
                     }
                 }
-                if (cout == 1)
+                if (count == 1)
                 {
                     result = letters[i];
                     break;
                 }
             }
-            return result == null ? null : result;
+            return result;
         }
 
     // Version 1.0
