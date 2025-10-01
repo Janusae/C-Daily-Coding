@@ -1,5 +1,6 @@
 ﻿using Reverse_String.Day10;
 using Reverse_String.Day11;
+using Reverse_String.Day12;
 using Reverse_String.Day4;
 using Reverse_String.Day5;
 using Reverse_String.Day6;
@@ -14,7 +15,7 @@ namespace Program
     {
         public static void Main()
         {
-            Console.WriteLine(FindSecondBiggestNumber.Find(new int[] { 1,2,3,4 })); 
+            Console.WriteLine(MaximumDifference.Find(new int[] { -1, 0, 1 })); 
 
         }
     }
